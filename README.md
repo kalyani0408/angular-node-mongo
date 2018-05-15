@@ -25,3 +25,38 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+
+
+RDBMS	                 MongoDB
+Database	        Database
+Table	                Collection
+Tuple/Row		Document
+column	Field
+Table Join		Embedded Documents
+Primary Key		Primary Key (Default key _id provided by mongodb itself)
+Database Server 	and Client
+
+
+mongod --storageEngine=mmapv1 --dbpath 
+
+use DATABASE_NAME : create database
+
+db:  check on which database you are on.
+
+show dbs: shows a list of databases. Your latest db is not present here since you are yet to inser at least one entry in it.
+
+db.DATABASE_NAME.insert({"name":""}) : entry inserted in the database.
+
+db.dropDatabase() : This will delete the selected database. 
+		    If you have not selected any database, then it will delete default 'test' database.
+
+use DATABASE_NAME 
+db.dropDatabase()  ------ to select any particular database and then drop it.
+
+
+Collections:
+
+In MongoDB, you don't need to create collection. 
+MongoDB creates collection automatically, when you insert some document.
+

@@ -1,0 +1,11 @@
+<form class="example-form">
+  <mat-form-field class="example-full-width">
+    <input matInput #myInput placeholder="Favorite food" value="Sushi">
+  </mat-form-field>
+
+  <button md-raised-button (click)="insertData(myInput)">submit</button>
+  <button md-raised-button (click)="show()">Show Entries</button>
+  <br />
+<p>{{Value}}</p>
+<p>{{data}}</p>  
+</form>
